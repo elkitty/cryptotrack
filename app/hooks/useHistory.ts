@@ -13,7 +13,7 @@ export const useCoinHistory = (coinId: string, days: number) => {
         setLoading(true);
         const response = await getCoinHistory(coinId, days);
         const coins = await response.json();
-        setData(coins);
+        setData(coins.prices.map(([timestamp, price]: [number, number]) => ({ timestamp, price })))
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to fetch coins");
       } finally {
