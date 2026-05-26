@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 import { getCoins } from "../lib/api";
 import { Coin } from "../types";

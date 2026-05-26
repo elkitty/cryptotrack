@@ -1,3 +1,4 @@
+import Alerts from "../alerts/Alerts";
 import Chart from "../chart/Chart";
 import Navbar from "./Navbar";
 import StatCards from "./StatCards";
@@ -17,7 +18,7 @@ const Dashboard = () => {
             <WatchList />
           </div>
         </div>
-        <div>alerts</div>
+        <Alerts />
       </div>
     </div>
   );
