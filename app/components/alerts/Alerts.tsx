@@ -20,7 +20,7 @@ const Alerts = () => {
   }, [coins]);
 
   return (
-    <div>
+    <div className="bg-gray-900 rounded-xl p-6 mt-4">
       <form>
         <input
           type="number"
