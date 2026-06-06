@@ -8,8 +8,8 @@ const Watchlist = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="h-[400px] overflow-y-auto">
-      {data?.slice(0, 10).map((coin) => (
+    <div className="h-full overflow-y-auto">
+      {data?.slice(0, 20).map((coin) => (
         <div key={coin.id} className="flex justify-between gap-4 px-4 py-3 border-b border-gray-800">
           <img
             src={coin.image}

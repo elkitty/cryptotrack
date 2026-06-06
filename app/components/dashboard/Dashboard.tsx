@@ -6,15 +6,15 @@ import WatchList from "./Watchlist";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-950 text-white ">
+    <div className="flex flex-col h-screen bg-gray-950 text-white">
       <Navbar />
-      <div className="px-6 py-4 flex flex-col gap-4">
+      <div className="flex flex-col flex-1 px-6 py-4 gap-4 overflow-hidden">
         <StatCards />
-        <div className="flex">
+        <div className="flex flex-1 gap-4 overflow-hidden">
           <div className="w-2/3">
             <Chart />
           </div>
-          <div className="w-1/3">
+          <div className="w-1/3 overflow-y-auto">
             <WatchList />
           </div>
         </div>
